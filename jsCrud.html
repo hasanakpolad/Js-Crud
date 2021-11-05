@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jsCrud.css">
+    <title>JavaScript CRUD Examples - Personel Takip Uygulaması</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p class="navInfo" id="info"> Personel Takip Uygulaması </p>
+    </div>
+    <div class="body">
+        <div class="kyt">
+            <input class="inp" type="text" name="Ad" id="ad" placeholder="Ad..">
+            <input class="inp" type="text" name="Soyad" id="lname" placeholder="Soyad..">
+            <input class="inp" type="tel" name="Tel" id="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Telefon..">
+            <button class="subBtn" onclick="Save()">Kaydet</button>
+        </div>
+        <br>
+        <div class="tbl" id="tblDiv">
+            <table border="1" class="addTbl" id="tblMain">
+                <thead>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Telefon</th>
+                    <th>İşlemler</th>
+                </thead>
+                <tbody id="tbTbl">
+                   
+                </tbody> 
+            </table>
+        </div>
+    </div>
+    <script src="jsCrud.js"></script>
+</body>
+
+</html>
